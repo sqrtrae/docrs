@@ -1,0 +1,20 @@
+[package]
+name = "docrs"
+version = "0.1.0"
+authors = ["sqrtrae <sqrtrae@gmail.com>"]
+description = """
+A command line utility for opening rust crate documentation on
+https://docs.rs using your default web browser.
+"""
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/sqrtrae/docrs"
+keywords = ["documentation"]
+categories = ["command-line-utilities"]
+edition = "2021"
+rust-version = "1.74.0"
+
+[dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
+regex = "1.10.4"
+webbrowser = "0.8.14"
